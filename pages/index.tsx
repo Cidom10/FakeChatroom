@@ -20,7 +20,7 @@ export default function HomePage() {
   const [err, setErr] = useState("");
 
   const handleSubmit = () => {
-    if (email.toLowerCase() !== "green.oliver@cyberhavoc.com" || pass !== "Havoc.Cyber1") {
+    if (email.toLowerCase() !== "o.green@mailfence.com" || pass !== "Havoc.Cyber1") {
       setErr("Incorrect email or password.")
     } else {
       document.cookie = ""
