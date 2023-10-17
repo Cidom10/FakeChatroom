@@ -5,7 +5,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>THE ChatRoom</title>
         <ColorSchemeScript />
       </Head>
       <body>

@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
 import { theme } from '../theme';
 
-export default function App({ Comp, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <MantineProvider theme={theme}>
       <Head>
@@ -15,7 +15,7 @@ export default function App({ Comp, pageProps }: AppProps) {
         />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
-      <Comp {...pageProps} />
+      <Component {...pageProps} />
     </MantineProvider>
   );
 }
