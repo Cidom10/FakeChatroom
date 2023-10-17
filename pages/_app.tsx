@@ -15,6 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
+      {/* @ts-expect-error Server Component */}
       <Component {...pageProps} />
     </MantineProvider>
   );

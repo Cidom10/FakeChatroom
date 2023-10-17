@@ -4,11 +4,13 @@ import { ColorSchemeScript } from '@mantine/core';
 export default function Document() {
   return (
     <Html lang="en">
+      {/* @ts-expect-error Server Component */}
       <Head>
         <ColorSchemeScript />
       </Head>
       <body>
         <Main />
+        {/* @ts-expect-error Server Component */}
         <NextScript />
       </body>
     </Html>
