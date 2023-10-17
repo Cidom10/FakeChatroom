@@ -20,7 +20,7 @@ export default function HomePage() {
   const [err, setErr] = useState("");
 
   const handleSubmit = () => {
-    if (email !== "test@email.com" || pass !== "testpass") {
+    if (email.toLowerCase() !== "green.oliver@cyberhavoc.com" || pass !== "Havoc.Cyber1") {
       setErr("Incorrect email or password.")
     } else {
       document.cookie = ""
@@ -33,12 +33,17 @@ export default function HomePage() {
     <Stack w={"99vw"} h={"57vh"} justify="center" align='center'>
       <Card w={"33vw"} withBorder>
         <Title ta={"center"}>THE ChatRoom</Title>
+        
         <Space h={"md"}/>
+        
         <TextInput label="Email" value={email} onChange={(event) => setEmail(event.currentTarget.value)} />
         <Space h={"md"}/>
         <PasswordInput label="Password" value={pass} onChange={(e) => setPass(e.target.value)}/>
+        
         <Text ta={"center"} c={"red"}>{err}</Text>
+        
         <Button mx={"auto"} mt={"lg"} w={"35%"} onClick={handleSubmit}>Sign In</Button>
+      
       </Card>
     </Stack>
   );
